@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fastlane AA Order Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="pin-section">
+    <h2>Enter Access PIN</h2>
+    <input type="password" id="pin-input" placeholder="Enter PIN">
+    <button onclick="checkPIN()">Submit</button>
+    <p id="pin-error" class="error"></p>
+  </div>
+
+  <div id="form-section" style="display: none;">
+    <h2>Garment Order Form</h2>
+    <form id="order-form">
+      <label>Date: <input type="date" name="date" required></label><br><br>
+      <label>Description:<br><textarea name="description" required></textarea></label><br><br>
+      <label>Your Email: <input type="email" name="email" required></label><br><br>
+
+      <h3>Garments</h3>
+      <div id="garments"></div>
+
+      <button type="submit">Submit Order</button>
+    </form>
+    <p id="success-message"></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
