@@ -123,12 +123,14 @@ body {
     font-size: 1rem;
   }
 
-  .welcome h2 {
-    font-size: 2rem;
+  .welcome-logo {
+    width: 100% !important;   /* force the image to shrink */
+    max-width: 300px;         /* optional: cap max width */
+    height: auto;
   }
 
-  .welcome-logo {
-    width: 90%;  /* ✅ Add this line to make the image shrink */
+  .welcome h2 {
+    font-size: 2rem;
   }
 
   .welcome h1 {
