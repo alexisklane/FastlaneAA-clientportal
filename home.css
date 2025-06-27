@@ -127,6 +127,10 @@ body {
     font-size: 2rem;
   }
 
+  .welcome-logo {
+    width: 90%;  /* ✅ Add this line to make the image shrink */
+  }
+
   .welcome h1 {
     font-size: 1.6rem;
   }
