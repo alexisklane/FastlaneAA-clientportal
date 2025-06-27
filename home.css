@@ -1,0 +1,139 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:ital,wght@0,700;1,400&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff; /* very light blue/navy tint */
+  margin: 0;
+  padding: 0;
+  color: #0b1d51; /* dark navy text */
+  text-align: center;
+}
+
+
+/* ---------- HEADER ---------- */
+.site-header {
+  background-color: #0b1d51; /* navy */
+  color: #fff;
+  padding: 25px 20px;
+  box-shadow: 0 2px 8px rgb(11 29 81 / 0.3);
+}
+
+.site-header nav a {
+  color: #ff6f3c; /* vibrant orange */
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.site-header nav a:hover {
+  color: #ff9166; /* lighter orange on hover */
+  text-decoration: underline;
+}
+
+/* ---------- WELCOME SECTION ---------- */
+.welcome {
+  padding: 10px 10px 10px;
+}
+
+.welcome-logo {
+  width: 500px;         /* adjust size as needed */
+  height: auto;
+  margin-bottom: 5px;  /* space below the logo */
+  opacity: 0.85;        /* slightly translucent if you want */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.welcome h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-bottom: 0px;
+   margin-top: 0px;
+  color: #1f2f5e; /* navy */
+}
+
+.welcome h1 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.welcome p {
+  font-size: 1.25rem;
+  color: #333;
+  max-width: 450px;
+  margin: 0 auto 40px;
+  line-height: 1.5;
+}
+
+/* ---------- LOGO GRID ---------- */
+.client-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 20px 80px;
+}
+
+.client-link img {
+  height: 110px;
+  max-width: 220px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  padding: 14px;
+  background-color: white;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 5px rgb(11 29 81 / 0.1);
+}
+
+.client-link img:hover {
+  transform: scale(1.08);
+  border-color: #ff6f3c;
+  box-shadow: 0 6px 12px rgb(255 111 60 / 0.4);
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background-color: #0b1d51; /* navy */
+  color: #fff;
+  text-align: center;
+  padding: 18px 12px;
+  font-size: 0.95rem;
+  margin-top: 50px;
+  box-shadow: 0 -2px 8px rgb(11 29 81 / 0.3);
+}
+
+/* ---------- MOBILE STYLING ---------- */
+@media (max-width: 600px) {
+  .client-link img {
+    height: 90px;
+    max-width: 180px;
+  }
+
+  .site-header nav a {
+    margin: 0 12px;
+    font-size: 1rem;
+  }
+
+  .welcome h2 {
+    font-size: 2rem;
+  }
+
+  .welcome h1 {
+    font-size: 1.6rem;
+  }
+
+  .welcome p {
+    font-size: 1rem;
+    max-width: 90%;
+    margin-bottom: 30px;
+  }
+}

@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Fastlane AA Order Portal</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fastlane AA Client Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css" />
 </head>
 <body>
-  <div id="pin-section">
-    <h2>Enter Access PIN</h2>
-    <input type="password" id="pin-input" placeholder="Enter PIN">
-    <button onclick="checkPIN()">Submit</button>
-    <p id="pin-error" class="error"></p>
-  </div>
 
-  <div id="form-section" style="display: none;">
-    <h2>Garment Order Form</h2>
-    <form id="order-form">
-      <label>Date: <input type="date" name="date" required></label><br><br>
-      <label>Description:<br><textarea name="description" required></textarea></label><br><br>
-      <label>Your Email: <input type="email" name="email" required></label><br><br>
 
-      <h3>Garments</h3>
-      <div id="garments"></div>
+  <!-- Global Header -->
+  <header class="site-header">
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
 
-      <button type="submit">Submit Order</button>
-    </form>
-    <p id="success-message"></p>
-  </div>
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <img src="Images/fastlaneaa.png" alt="Company Logo" class="welcome-logo" />
+    <h2>CONTRACT CUSTOMER PORTAL</h2>
+    <p>Select your company to begin your order:</p>
+  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script src="script.js"></script>
+  <!-- Client Logo Grid -->
+  <main class="client-grid">
+    <a href="1800-striper.html" class="client-link">
+      <img src="https://th.bing.com/th/id/OIP.n_wScqf55DGYyrZKbZPwigHaEG?w=329&h=181&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Client Logo" class="logo" />
+    </a>
+    <a href="client2.html" class="client-link">
+      <img src="Images/client2-logo.png" alt="Client 2 Logo" />
+    </a>
+    <!-- Add more clients as needed -->
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Fastlane AA. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>

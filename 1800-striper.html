@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Portal</title>
+  
+  <!-- Google Fonts: Poppins for a modern look -->
+  
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+</header>
+
+ <!-- Move logos and title into main content instead -->
+  <section class="logo-banner centered">
+    <img src="https://th.bing.com/th/id/OIP.n_wScqf55DGYyrZKbZPwigHaEG?w=329&h=181&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Client Logo" class="logo" />
+    <h1>Fastlane AA Contract Customer Portal</h1>
+    <img src="https://th.bing.com/th/id/OIP.oFB-hhCb0IgH2FwPElSDLAHaDu?r=0&rs=1&pid=ImgDetMain" alt="Our Logo" class="logo" />
+  </section>
+
+  <main>
+    <section id="pin-section" class="centered">
+      <h2>Enter Access PIN</h2>
+      <input type="password" id="pin-input" placeholder="Enter PIN" />
+      <button id="submit-btn" onclick="checkPIN()">Submit</button id="submit-btn">
+      <p id="pin-error" class="error"></p>
+    </section>
+
+    <section id="form-section" style="display: none;" class="centered">
+      <h2>Garment Order Form</h2>
+      <form id="order-form">
+        <div class="form-row">
+          <label>Date:
+            <input type="date" name="date" required />
+          </label>
+          <label>Your Email:
+            <input type="email" name="email" required />
+          </label>
+        </div>
+
+        <label class="full-width">
+          Description:<br />
+          <textarea name="description" rows="3" required></textarea>
+        </label>
+
+        <h3>Garments</h3>
+        <div id="garments"></div>
+
+        <button type="submit" class="submit-btn">Submit Order</button>
+      </form>
+      <p id="success-message" class="success"></p>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Fastlane AA. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/1800-striper-script.js"></script>
+</body>
+</html>
